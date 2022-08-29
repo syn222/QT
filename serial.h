@@ -27,7 +27,7 @@ public:
     QStringList serialDescription;
     // 串口扫描函数
     Q_INVOKABLE QStringList serialScan(void);
-    bool serialOpen(QString serialName, int baudRate);
+    Q_INVOKABLE bool serialOpen(QString serialName, int baudRate);
     void ReadData();
     void sendData(QByteArray sendData);
     void serialClose();

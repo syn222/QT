@@ -20,6 +20,10 @@ QStringList Serial::serialScan(void)
         qDebug() << this->portName();
         //qDebug() << info.description();
     }
+    if(serialPortList.size()==0)
+    {
+    serialPortList.append("None");
+    }
     return serialPortList;
 }
 void Serial::serialPortComboBox(void)
